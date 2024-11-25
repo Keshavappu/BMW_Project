@@ -1,0 +1,353 @@
+/* src/components/Navbar.css */
+*{
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  border-bottom: 2px solid white;
+  top: 0;
+  padding: 5px 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  height: 50px;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.models{
+  height: 100vh;
+  background-image: url("https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/bmw-individual/2024/bmw-individual-m3-touring-hd-02.jpg");
+background-size: cover;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: gray;
+}
+/* src/components/Home.css */
+
+.home:hover{
+  animation: forwards 3s 5s 0s infinite forwards step-start;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+.bmw-content {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+/* src/components/About.css */
+.about {
+  display: flex;
+  align-items: self-start;
+  padding: 50px;
+  height: 70vh;
+  background-image:url( "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/bmw-individual/2024/bmw-individual-m3-touring-hd-02.jpg");
+ background-size: cover;
+}
+.contact{
+  color:black;
+  align-items: self-start;
+  padding: 50px;
+  height: 70vh;
+  background-image:url( "https://www.bmw.co.za/content/dam/bmw/common/all-models/m-series/m2-coupe/2022/Highlights/bmw-m-series-m2-coupe-sp-desktop.jpg");
+ background-size: cover;
+}
+
+.about-image {
+  width: 50%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.about-content {
+  max-width: 50%;
+  color: azure;
+}
+/* Slider container styling */
+.slider-container {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  
+}
+
+/* Slider title and subtitle */
+.slider-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: -20px;
+}
+
+.slider-subtitle {
+  font-size: 16px;
+  color: #d1d1d1;
+  margin-bottom: 10px;
+}
+
+/* Card styling */
+.card {
+  text-align: center;
+  padding: 10px;
+}
+
+.card-image {
+  width: 95%;
+  border-radius: 10px;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
+/* Base Styles */
+.slider-container {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Title and Subtitle */
+.slider-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.slider-subtitle {
+  font-size: 16px;
+  color: #d1d1d1;
+  margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card {
+  text-align: center;
+  padding: 10px;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1024px (tablets and small laptops) */
+@media screen and (max-width: 1024px) {
+  .slider-container {
+    padding: 30px 15px;
+  }
+
+  .slider-title {
+    font-size: 22px;
+  }
+
+  .slider-subtitle {
+    font-size: 14px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+}
+
+/* For screens smaller than 768px (large mobile phones) */
+@media screen and (max-width: 768px) {
+  .slider-container {
+    padding: 20px 10px;
+  }
+
+  .slider-title {
+    font-size: 20px;
+  }
+
+  .slider-subtitle {
+    font-size: 13px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media screen and (max-width: 480px) {
+  .slider-container {
+    padding: 15px 5px;
+  }
+
+  .slider-title {
+    font-size: 18px;
+  }
+
+  .slider-subtitle {
+    font-size: 12px;
+  }
+
+  .card-title {
+    font-size: 12px;
+  }
+}
+
+
+#home{
+  text-decoration: none;
+  list-style: none;
+}
+/* Hover effect for #home1 */
+#home1 {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  background-image: url("https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/motorsport/M-Hybrid-V8/bmw-m-hybrid-v8-stage-teaser-16x9.jpg?imwidth=1280");
+  background-size: cover;
+  background-position: 60%;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease-in-out;
+  color: rgb(14, 168, 173);
+}
+
+#home1:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Add shadow */
+}
+
+/* Hover effect for #home2 */
+#home2 {
+  position: relative;
+  left: 44.7%;
+  top: -250px;
+  width: 496px;
+  height: 250px;
+  background-image: url("https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/motorsport/M4-GT3-EVO/bmw-m4-gt3-evo-hd-08.jpg?imwidth=1280");
+  background-size: cover;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease-in-out;
+  color: rgb(14, 168, 173);
+}
+
+#home2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effect for #home3 */
+#home3 {
+  position: relative;
+  top: -248px;
+  width: 600px;
+  height: 400px;
+  background-image: url("https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/motorsport/M4-GT4-EVO/bmw-m4-gt4-evo-hd-02.jpg?imwidth=1280");
+  background-size: cover;
+  background-position: 30%;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease-in-out;
+  color: rgb(14, 168, 173);
+}
+
+#home3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effect for #home4 */
+#home4 {
+  position: relative;
+  top: -248px;
+  height: 200px;
+  width: 300px;
+  background-image: url("https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/motorsport/M2-CS-Racing/bmw-m2-cs-racing-ascari-hero.jpg?imwidth=768");
+  background-size: cover;
+  background-position: 45%;
+  background-repeat: no-repeat;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease-in-out;
+}
+
+#home4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effect for #home5 */
+#home5 {
+  position: relative;
+  top: -249px;
+  height: 200px;
+  width: 300px;
+  background-image: url("https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/motorsport/m2-racing/bmw-m2-racing-stage-01-16x9.jpg?imwidth=768");
+  background-size: cover;
+  background-position: 45%;
+  background-repeat: no-repeat;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease-in-out;
+}
+
+#home5:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Add consistent styling for all hover effects */
+#home1::before,
+#home2::before,
+#home3::before,
+#home4::before,
+#home5::before {
+  font-family: var(--site-context-font);
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+
+  #uu{
+    display: flex;
+
+    border: 2px rgb(163, 5, 5);
+  }

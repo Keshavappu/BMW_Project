@@ -1,0 +1,208 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.models {
+  background-image: url("");
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  color: lightblue;
+}
+
+#home {
+  height: 70vh;
+}
+
+.form-container {
+  background: transparent;
+  max-height: 400px;
+  max-width: 330px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0056b3;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #837eca;
+  border-radius: 4px;
+  background: #9e9da8;
+}
+
+button {
+  width: 200%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#sign {
+  /* position: relative;
+  left: 490px; */
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  /* bottom: 69px; */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#btnn{
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#sig {
+  position: relative;
+  left: 100px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1024px (tablets and small laptops) */
+@media screen and (max-width: 1024px) {
+  .form-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button {
+    width: 50%;
+    font-size: 14px;
+  }
+
+  #sign {
+    left: 130px;
+    bottom: 30px;
+  }
+
+  #sig {
+    left: 80px;
+  }
+}
+
+/* For screens smaller than 768px (large mobile phones) */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  button {
+    width: 60%;
+  }
+
+  #sign {
+    left: 100px;
+    bottom: 20px;
+  }
+
+  #sig {
+    left: 60px;
+  }
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 5px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .form-container {
+    padding: 8px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+
+  button {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  #sign {
+    left: 70px;
+    bottom: 15px;
+  }
+
+  #sig {
+    left: 40px;
+  }
+}
